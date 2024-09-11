@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revolving Div</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      margin: 50px auto;
+      transition: transform 1s ease;
+    }
+    .revolve {
+      transform: rotate(360deg);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box" id="box"></div>
+  <button onclick="revolveDiv()">Revolve</button>
+
+  <script>
+    function revolveDiv() {
+      const box = document.getElementById('box');
+      box.classList.toggle('revolve');
+    }
+  </script>
+
+</body>
+</html>
